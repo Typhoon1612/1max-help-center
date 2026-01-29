@@ -1,0 +1,105 @@
+{
+  "category": "All Cryptocurrency",
+  "faqs": [
+    {
+      "id": "1-what-is-cryptocurrency",
+      "question": "1. What is cryptocurrency?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Cryptocurrency is a digital or virtual currency that uses cryptography for security and operates on blockchain technology. Popular examples include Bitcoin (BTC) and Ethereum (ETH)."
+        }
+      ]
+    },
+    {
+      "id": "2-how-can-i-check-cryptocurrency-prices",
+      "question": "2. How can I check cryptocurrency prices?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Crypto prices are displayed in real time on 1MAX’s market or trading page. Prices may vary slightly across exchanges due to market supply and demand."
+        }
+      ]
+    },
+    {
+      "id": "3-what-affects-cryptocurrency-prices",
+      "question": "3. What affects cryptocurrency prices?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Prices can change due to market demand, trading volume, news, regulations, technological updates, and investor sentiment. Crypto is highly volatile."
+        }
+      ]
+    },
+    {
+      "id": "4-how-do-i-buy-or-sell-cryptocurrency",
+      "question": "4. How do I buy or sell cryptocurrency?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "You can buy or sell crypto via Spot Trading, Margin Trading, or Buy Crypto services on 1MAX. Orders can be market, limit, or conditional orders."
+        }
+      ]
+    },
+    {
+      "id": "5-what-are-trading-pairs",
+      "question": "5. What are trading pairs?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "A trading pair shows which two assets can be traded for each other, e.g., BTC/USDT lets you trade Bitcoin for USDT or vice versa."
+        }
+      ]
+    },
+    {
+      "id": "6-are-there-fees-for-trading-crypto",
+      "question": "6. Are there fees for trading crypto?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Yes. Fees depend on trading type, order type, and user tier. Check the 1MAX’s Fee Schedule page for details."
+        }
+      ]
+    },
+    {
+      "id": "7-can-i-lose-money-trading-crypto",
+      "question": "7. Can I lose money trading crypto?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Yes. Cryptocurrency markets are volatile. Trading carries risk of partial or total loss. Never trade more than you can afford to lose."
+        }
+      ]
+    },
+    {
+      "id": "8-what-is-market-liquidity",
+      "question": "8. What is market liquidity?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Liquidity is how easily an asset can be bought or sold without significantly affecting its price. Higher liquidity usually means smaller price swings."
+        }
+      ]
+    },
+    {
+      "id": "9-how-can-i-track-my-portfolio",
+      "question": "9. How can I track my portfolio?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "1MAX provides a portfolio or assets page where you can see balances, current market values, and performance."
+        }
+      ]
+    },
+    {
+      "id": "10-how-is-cryptocurrency-regulated",
+      "question": "10. How is cryptocurrency regulated?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Regulations vary by country. Users should ensure compliance with local laws regarding cryptocurrency trading and taxation."
+        }
+      ]
+    }
+  ]
+}

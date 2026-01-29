@@ -1,0 +1,205 @@
+{
+  "category": "Account & Security",
+  "faqs": [
+    {
+      "id": "1-how-do-i-create-an-account",
+      "question": "1. How do I create an account?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "You can create an account by registering with your email address or mobile number and setting a secure password."
+        },
+        {
+          "type": "text",
+          "value": "After registration, you may be required to complete identity verification before accessing certain features."
+        }
+      ]
+    },
+    {
+      "id": "2-why-do-i-need-to-complete-identity-verification-",
+      "question": "2. Why do I need to complete identity verification (KYC)?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Identity verification helps:"
+        },
+        {
+          "type": "list",
+          "value": [
+            "Prevent fraud and unauthorized access"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Comply with regulatory requirements"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Increase account security and usage limits"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "Verification requirements may vary depending on your region and account activity."
+        }
+      ]
+    },
+    {
+      "id": "3-how-can-i-secure-my-account",
+      "question": "3. How can I secure my account?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "We strongly recommend enabling multiple security measures, including:"
+        },
+        {
+          "type": "list",
+          "value": [
+            "Two-Factor Authentication (2FA)"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Anti-phishing codes"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Withdrawal address whitelisting"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Strong and unique passwords"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "Using all available security features significantly reduces the risk of unauthorized access."
+        }
+      ]
+    },
+    {
+      "id": "4-what-is-two-factor-authentication-2fa",
+      "question": "4. What is Two-Factor Authentication (2FA)?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "2FA adds an extra layer of protection by requiring a one-time verification code in addition to your password."
+        },
+        {
+          "type": "text",
+          "value": "Codes are typically generated via an authenticator app or sent by SMS, depending on your settings."
+        }
+      ]
+    },
+    {
+      "id": "5-what-should-i-do-if-i-forget-my-password",
+      "question": "5. What should I do if I forget my password?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "You can reset your password using the “Forgot Password” option on the login page."
+        },
+        {
+          "type": "text",
+          "value": "For security reasons, withdrawals may be temporarily restricted after a password reset."
+        }
+      ]
+    },
+    {
+      "id": "6-what-happens-if-i-detect-suspicious-activity",
+      "question": "6. What happens if I detect suspicious activity?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "If you notice any unusual activity:"
+        },
+        {
+          "type": "list",
+          "value": [
+            "Immediately change your password"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Disable withdrawals (reach out to customer support)"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Contact customer support"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Review recent login and transaction records"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "Prompt action helps minimize potential losses."
+        }
+      ]
+    },
+    {
+      "id": "7-can-i-log-in-from-multiple-devices",
+      "question": "7. Can I log in from multiple devices?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Yes. You may log in from multiple devices, but each new device or location may require additional verification to protect your account."
+        }
+      ]
+    },
+    {
+      "id": "8-why-cant-i-log-in-to-my-account",
+      "question": "8. Why can’t I log in to my account?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "This may be due to an incorrect password, expired verification code, network issues, or account restrictions. Try resetting your password or contact 1MAX Support if the issue persists."
+        }
+      ]
+    },
+    {
+      "id": "9-how-to-identify-our-official-1max-accounts",
+      "question": "9. How to identify our official 1MAX accounts?",
+      "blocks": [
+        {
+          "type": "list",
+          "value": [
+            "Look for Verified Badges Official 1MAX accounts on social media, messaging platforms, and forums will have platform verification marks (like a blue check)."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Check the Username Carefully Official accounts use consistent and exact usernames. Watch out for similar or misspelled names trying to impersonate us."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Follow Links from Our Official Website. Always access our social media or support channels through links listed on the official 1MAX website ; not from random posts."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Ask Support If unsure. If you’re not certain whether an account is official, contact our customer support team at support@1max.com for verification."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,595 @@
+{
+  "category": "Deposit & Withdrawal",
+  "faqs": [
+    {
+      "id": "deposit",
+      "question": "Deposit",
+      "blocks": []
+    },
+    {
+      "id": "how-do-i-deposit-funds-on-1max",
+      "question": "How do I deposit funds on 1MAX?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "To deposit funds into your 1MAX account:"
+        },
+        {
+          "type": "list",
+          "value": [
+            "Log in to your 1MAX account."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Go to “Balances” → “Deposit.”"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Select the asset you wish to deposit (e.g., USDT, BTC)."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Choose the appropriate network or protocol (e.g., ERC-20, TRC-20)."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Copy your generated wallet address or scan the QR code to send assets from your external wallet or another exchange."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Confirm the transfer from your sending wallet."
+          ]
+        },
+        {
+          "type": "text",
+          "value": "*Important: Always make sure the network selected matches the blockchain of the asset you are sending to avoid lost funds."
+        }
+      ]
+    },
+    {
+      "id": "how-long-does-it-take-for-my-deposit-to-appear",
+      "question": "How long does it take for my deposit to appear?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Deposit processing times depend on the blockchain network and its current congestion."
+        },
+        {
+          "type": "list",
+          "value": [
+            "Processing time depends on the blockchain network and current network congestion"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Deposits are credited only after reaching the required number of network confirmations"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "Delays may occur during periods of high network activity and transaction times are outside the platform’s control."
+        }
+      ]
+    },
+    {
+      "id": "is-there-a-minimum-deposit-amount",
+      "question": "Is there a minimum deposit amount?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Yes. Each supported cryptocurrency has a minimum deposit requirement."
+        },
+        {
+          "type": "text",
+          "value": "Deposits below the minimum amount may not be credited to your account and may not be recoverable."
+        },
+        {
+          "type": "text",
+          "value": "Please refer to the deposit page for the minimum amount before initiating a transfer."
+        }
+      ]
+    },
+    {
+      "id": "why-is-my-deposit-not-credited-yet",
+      "question": "Why is my deposit not credited yet?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Common reasons include:"
+        },
+        {
+          "type": "list",
+          "value": [
+            "The transaction has not reached the required number of confirmations"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Blockchain network congestion"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Incorrect asset or blockchain network selected"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Missing or incorrect memo/tag (for applicable assets)"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "You can track the transaction using the TXID on the relevant blockchain explorer."
+        }
+      ]
+    },
+    {
+      "id": "can-i-cancel-a-deposit-after-sending-it",
+      "question": "Can I cancel a deposit after sending it?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "No. Cryptocurrency transactions are irreversible once broadcast to the blockchain."
+        },
+        {
+          "type": "text",
+          "value": "If the transaction has been confirmed on-chain, it cannot be canceled or reversed."
+        }
+      ]
+    },
+    {
+      "id": "what-happens-if-i-deposit-using-the-wrong-network",
+      "question": "What happens if I deposit using the wrong network?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Deposits made using an unsupported or incorrect network may not be credited automatically."
+        },
+        {
+          "type": "text",
+          "value": "In some cases, recovery may be possible but is not guaranteed and may incur additional processing fees. Certain deposits may be permanently lost."
+        },
+        {
+          "type": "text",
+          "value": "Always confirm the network before submitting a transaction."
+        }
+      ]
+    },
+    {
+      "id": "can-i-deposit-from-another-exchange-or-external-wa",
+      "question": "Can I deposit from another exchange or external wallet?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Yes. You may deposit from another exchange or personal wallet by sending funds to your deposit address on this platform."
+        },
+        {
+          "type": "text",
+          "value": "Please ensure:"
+        },
+        {
+          "type": "list",
+          "value": [
+            "The asset is supported"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "The blockchain network matches exactly"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "The memo/tag (if required) is entered correctly"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "are-there-any-deposit-fees",
+      "question": "Are there any deposit fees?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "1MAX does not charge deposit fees. However, blockchain network fees are charged by the network itself and are paid to miners or validators."
+        }
+      ]
+    },
+    {
+      "id": "do-i-need-to-complete-kyc-to-deposit",
+      "question": "Do I need to complete KYC to deposit?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "No. You can deposit without completing KYC up to a total deposit limit of 3 BTC."
+        },
+        {
+          "type": "text",
+          "value": "Once your cumulative deposits exceed 3 BTC, KYC verification will be required to continue making additional deposits."
+        },
+        {
+          "type": "text",
+          "value": "This allows users to get started quickly while maintaining platform security and regulatory compliance."
+        }
+      ]
+    },
+    {
+      "id": "who-can-i-contact-for-deposit-related-issues",
+      "question": "Who can I contact for deposit-related issues?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "If you need assistance, please reach out to 1MAX Customer Support through the Help Center or official support channels."
+        }
+      ]
+    },
+    {
+      "id": "withdrawal",
+      "question": "Withdrawal",
+      "blocks": []
+    },
+    {
+      "id": "how-do-i-withdraw-cryptocurrency",
+      "question": "How do I withdraw cryptocurrency?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "To withdraw funds from your 1MAX account:"
+        },
+        {
+          "type": "list",
+          "value": [
+            "Log in to your 1MAX account."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Go to “Balances” → “Withdraw.”"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Select the asset you wish to withdraw (e.g., USDT, BTC)."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Choose the appropriate network or protocol (e.g., ERC-20, TRC-20)."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Enter the recipient wallet address and the withdrawal amount."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Review the withdrawal details carefully and confirm the request."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Complete any required security verification (e.g., email, 2FA)."
+          ]
+        },
+        {
+          "type": "text",
+          "value": "*Important: Always ensure the selected network matches the recipient wallet’s blockchain. Withdrawals sent to an incorrect network or address may result in permanent loss of funds."
+        }
+      ]
+    },
+    {
+      "id": "are-there-any-withdrawal-fees",
+      "question": "Are there any withdrawal fees?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Yes. Withdrawal fees vary depending on the asset and blockchain network selected."
+        },
+        {
+          "type": "text",
+          "value": "The applicable fee will be displayed on the withdrawal confirmation page before you submit the request."
+        },
+        {
+          "type": "text",
+          "value": "Withdrawal fees are charged to cover blockchain network costs and may be adjusted based on network conditions."
+        }
+      ]
+    },
+    {
+      "id": "do-i-need-to-complete-kyc-to-withdraw-funds",
+      "question": "Do I need to complete KYC to withdraw funds?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "KYC requirements for withdrawals depend on your account verification level and applicable regulations."
+        },
+        {
+          "type": "text",
+          "value": "Accounts without completed KYC may be subject to withdrawal limits or restrictions."
+        },
+        {
+          "type": "text",
+          "value": "Please refer to your account verification status for the latest withdrawal eligibility."
+        }
+      ]
+    },
+    {
+      "id": "how-long-does-a-withdrawal-take-to-process",
+      "question": "How long does a withdrawal take to process?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Withdrawal processing times vary depending on the asset, blockchain network conditions, and internal risk controls. Once approved, the transaction will be broadcast to the blockchain and credited according to the network’s confirmation requirements."
+        }
+      ]
+    },
+    {
+      "id": "is-there-a-withdrawal-limit",
+      "question": "Is there a withdrawal limit?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Yes. Withdrawal limits may apply based on:"
+        },
+        {
+          "type": "list",
+          "value": [
+            "Asset type"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Account verification (KYC) level"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Risk control policies"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "Your current withdrawal limits can be viewed on the withdrawal page or in your account settings.What happens if I withdraw to the wrong address?"
+        },
+        {
+          "type": "text",
+          "value": "Cryptocurrency withdrawals are irreversible."
+        },
+        {
+          "type": "text",
+          "value": "If funds are sent to an incorrect or unsupported address, they may be permanently lost and cannot be recovered."
+        },
+        {
+          "type": "text",
+          "value": "1MAX is unable to reverse or retrieve assets sent to the wrong address."
+        },
+        {
+          "type": "text",
+          "value": "Please always verify the recipient address and network carefully before submitting a withdrawal."
+        }
+      ]
+    },
+    {
+      "id": "why-was-my-withdrawal-rejected-or-failed",
+      "question": "Why was my withdrawal rejected or failed?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "A withdrawal request may fail or be rejected due to:"
+        },
+        {
+          "type": "list",
+          "value": [
+            "Incorrect wallet address or network selection"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Insufficient balance or fees"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Security or risk control checks"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "System maintenance or wallet suspension"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "If your withdrawal fails, the assets will remain in your account. You may retry after resolving the issue."
+        }
+      ]
+    },
+    {
+      "id": "why-is-my-withdrawal-pending",
+      "question": "Why is my withdrawal pending?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "A withdrawal may remain in a pending state due to:"
+        },
+        {
+          "type": "list",
+          "value": [
+            "Blockchain network congestion"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "System or wallet maintenance"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Internal security or risk assessments"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "Status updates are available under Balances → Withdraw → Recent."
+        }
+      ]
+    },
+    {
+      "id": "is-there-a-minimum-withdrawal-amount",
+      "question": "Is there a minimum withdrawal amount?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Yes. Withdrawals below the minimum amount may not be processed. Please check the withdrawal page for details."
+        }
+      ]
+    },
+    {
+      "id": "can-i-cancel-a-withdrawal-after-submitting-it",
+      "question": "Can I cancel a withdrawal after submitting it?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "No. Once a withdrawal request is submitted and processed, it cannot be canceled."
+        }
+      ]
+    },
+    {
+      "id": "can-i-modify-or-cancel-a-withdrawal-request",
+      "question": "Can I modify or cancel a withdrawal request?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Once a withdrawal request has been submitted and processed, it cannot be modified or canceled."
+        },
+        {
+          "type": "text",
+          "value": "If the request is still under review, cancellation availability depends on system status and cannot be guaranteed."
+        }
+      ]
+    },
+    {
+      "id": "why-are-withdrawals-temporarily-unavailable",
+      "question": "Why are withdrawals temporarily unavailable?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Withdrawals may be temporarily disabled due to:"
+        },
+        {
+          "type": "list",
+          "value": [
+            "Wallet or system maintenance"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Blockchain network issues"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Security or risk control measures"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "Announcements will be made when withdrawals are affected. Please check official notices for updates."
+        }
+      ]
+    },
+    {
+      "id": "how-can-i-track-my-withdrawal-status",
+      "question": "How can I track my withdrawal status?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "You can track your withdrawal by:"
+        },
+        {
+          "type": "list",
+          "value": [
+            "Navigating to Balances → Withdraw → Recent"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Copying the transaction hash (TXID)"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Viewing the transaction on the relevant blockchain explorer"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "Once broadcast, confirmation time depends on the blockchain network."
+        }
+      ]
+    },
+    {
+      "id": "what-should-i-do-if-my-withdrawal-is-stuck-for-a-l",
+      "question": "What should I do if my withdrawal is stuck for a long time?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "If your withdrawal remains pending for an extended period:"
+        },
+        {
+          "type": "list",
+          "value": [
+            "Check the transaction status using the TXID"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Ensure the network is operating normally"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Contact 1MAX Customer Support if the delay persists"
+          ]
+        }
+      ]
+    }
+  ]
+}
