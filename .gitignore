@@ -23,5 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 
+#Rules and Info
+VISION.md 
+
 # FAQ Data Master
 # faq_data_master

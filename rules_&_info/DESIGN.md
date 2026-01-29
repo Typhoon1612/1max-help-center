@@ -34,5 +34,5 @@ If card used #FFFFFF then use #F1F4F9 for page background
 
 ## 6. 🖼️ Reference (Optional)
 * "Make it look like this page":
-https://www.bybit.com/en/help-center/topic-list/account-matters#subaccount 
+https://www.bybit.com/en/help-center/topic-list/account-matters#registration_login
 
