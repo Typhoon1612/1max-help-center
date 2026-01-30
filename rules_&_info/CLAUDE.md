@@ -310,3 +310,8 @@ run();
 - **Frontend:**
   - Vue.js
   - TailwindCSS
+
+## 🚀 9. Component Workflow
+
+- **Creation:** When asked to create a new component, always create a new file in `src/components/`.
+- **Verification:** Immediately add the new component to `App.vue` to ensure it is displayed and verified.

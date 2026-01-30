@@ -1,0 +1,77 @@
+{
+  "category": "Anti Money Laundering",
+  "faqs": [
+    {
+      "id": "what-is-anti-money-laundering-aml-and-why-it-matte",
+      "question": "What Is Anti Money Laundering (AML) and Why It Matters?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Anti-Money Laundering (AML) refers to the policies and controls used to prevent illegal activities such as money laundering, fraud, and terrorist financing. In the crypto industry, effective AML practices help safeguard users, strengthen market trust, and support sustainable ecosystem growth."
+        }
+      ]
+    },
+    {
+      "id": "what-is-fatf",
+      "question": "What Is FATF?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "The Financial Action Task Force (FATF) is an international organization that sets global standards to combat money laundering, terrorist financing, and other financial crimes."
+        },
+        {
+          "type": "text",
+          "value": "Founded by the G7 countries, FATF develops recommendations that governments and financial institutions around the world use to design and enforce Anti-Money Laundering (AML) and Counter-Terrorist Financing (CTF) regulations. These standards are widely adopted by banks, payment providers, and cryptocurrency exchanges."
+        },
+        {
+          "type": "text",
+          "value": "FATF also monitors countries’ compliance with these standards and identifies jurisdictions with higher risks, helping financial platforms manage exposure to illicit activity."
+        }
+      ]
+    },
+    {
+      "id": "how-does-1max-support-aml",
+      "question": "How does 1MAX support AML?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "At 1MAX, we are committed to creating a secure and compliant digital asset trading environment. Our Anti-Money Laundering (AML) framework is designed to prevent financial crime and protect our users, in line with global regulatory expectations. To support these standards, 1MAX implements:"
+        },
+        {
+          "type": "list",
+          "value": [
+            "Know Your Customer (KYC): Risk-based identity verification to ensure users are properly identified."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Transaction Monitoring: Continuous monitoring to detect unusual or suspicious activity."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Risk-Based Controls: Enhanced due diligence for higher-risk users, transactions, or jurisdictions."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Sanctions & Restrictions: Screening against applicable sanctions and restricted jurisdiction lists."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Ongoing Reviews: Regular updates to our AML controls to reflect regulatory and industry developments."
+          ]
+        },
+        {
+          "type": "text",
+          "value": "By following FATF-aligned principles and continuously improving our compliance systems, 1MAX is dedicated to combating financial crime and protecting the integrity of our platform."
+        }
+      ]
+    }
+  ]
+}

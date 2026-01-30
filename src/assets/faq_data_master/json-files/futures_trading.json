@@ -1,0 +1,527 @@
+{
+  "category": "Futures Trading",
+  "faqs": [
+    {
+      "id": "what-is-futures-trading",
+      "question": "What is futures trading?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Futures trading allows users to buy or sell contracts that represent an underlying cryptocurrency at a predetermined price. It enables traders to speculate on price movements without owning the actual asset."
+        }
+      ]
+    },
+    {
+      "id": "how-does-futures-trading-work",
+      "question": "How does futures trading work?",
+      "blocks": [
+        {
+          "type": "list",
+          "value": [
+            "Traders open long positions if they expect prices to rise"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Traders open short positions if they expect prices to fall"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Profit and loss are determined by the difference between the entry price and exit price of the contract"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "what-is-leverage-in-futures-trading",
+      "question": "What is leverage in futures trading?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Leverage allows you to control a larger position using a smaller amount of capital."
+        },
+        {
+          "type": "text",
+          "value": "For example, 10× leverage allows you to open a position worth 10 times your margin."
+        },
+        {
+          "type": "text",
+          "value": "Higher leverage increases both potential profits and potential losses."
+        }
+      ]
+    },
+    {
+      "id": "what-is-margin",
+      "question": "What is margin?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Margin is the collateral required to open and maintain a futures position."
+        },
+        {
+          "type": "list",
+          "value": [
+            "Initial Margin: Capital required to open a position"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Maintenance Margin: Minimum balance required to keep the position open"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "If margin falls below maintenance requirements, liquidation may occur."
+        }
+      ]
+    },
+    {
+      "id": "what-is-liquidation",
+      "question": "What is liquidation?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Liquidation occurs when your account equity falls below the maintenance margin."
+        },
+        {
+          "type": "text",
+          "value": "The system will automatically close your position to prevent further losses."
+        }
+      ]
+    },
+    {
+      "id": "can-i-lose-more-than-my-margin",
+      "question": "Can I lose more than my margin?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Yes. Futures trading involves the risk of losing more than your initial margin, especially when using high leverage or cross margin mode."
+        },
+        {
+          "type": "text",
+          "value": "Users should monitor positions closely and manage risk carefully."
+        }
+      ]
+    },
+    {
+      "id": "what-is-the-difference-between-cross-margin-and-is",
+      "question": "What is the difference between Cross Margin and Isolated Margin?",
+      "blocks": [
+        {
+          "type": "list",
+          "value": [
+            "Cross Margin: All available margin is shared across positions, which may reduce liquidation risk but can result in larger losses"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Isolated Margin: Margin is limited to a single position, restricting maximum loss to the allocated amount"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "Margin mode availability depends on platform rules."
+        }
+      ]
+    },
+    {
+      "id": "can-i-switch-margin-mode-after-opening-a-position",
+      "question": "Can I switch margin mode after opening a position?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Margin mode switching may be restricted once a position is open."
+        },
+        {
+          "type": "text",
+          "value": "Please check platform rules before opening a position."
+        }
+      ]
+    },
+    {
+      "id": "can-i-add-margin-to-an-existing-position",
+      "question": "Can I add margin to an existing position?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Yes. Adding margin can help reduce liquidation risk, subject to platform limits and account balance availability."
+        }
+      ]
+    },
+    {
+      "id": "what-order-types-are-supported-in-futures-trading",
+      "question": "What order types are supported in futures trading?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Common order types include:"
+        },
+        {
+          "type": "list",
+          "value": [
+            "Market Orders – Execute immediately at market price"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Limit Orders – Execute at a specified price"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Stop / Stop-Limit Orders – Trigger when a preset price is reached"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "Availability may vary by contract."
+        }
+      ]
+    },
+    {
+      "id": "what-fees-apply-to-futures-trading",
+      "question": "What fees apply to futures trading?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Futures trading may include:"
+        },
+        {
+          "type": "list",
+          "value": [
+            "Trading fees (maker/taker)"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Funding fees (for perpetual contracts)"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Liquidation fees (if applicable)"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "All fees are displayed before order confirmation."
+        }
+      ]
+    },
+    {
+      "id": "what-is-a-funding-rate",
+      "question": "What is a funding rate?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Funding rates are periodic payments exchanged between long and short position holders in perpetual contracts."
+        },
+        {
+          "type": "text",
+          "value": "They help keep futures prices aligned with spot prices."
+        }
+      ]
+    },
+    {
+      "id": "how-often-are-funding-fees-charged",
+      "question": "How often are funding fees charged?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Funding fees are charged at scheduled intervals (e.g., every 8 hours, 4pm, 12am, 8am GMT +8)."
+        },
+        {
+          "type": "text",
+          "value": "The rate may be positive or negative depending on market conditions."
+        }
+      ]
+    },
+    {
+      "id": "what-happens-if-a-position-is-liquidated",
+      "question": "What happens if a position is liquidated?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "When liquidation occurs:"
+        },
+        {
+          "type": "list",
+          "value": [
+            "Positions may be partially or fully closed"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Margin is used to cover losses"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Additional liquidation fees may apply"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "Remaining funds, if any, are returned to your account."
+        }
+      ]
+    },
+    {
+      "id": "what-is-auto-deleveraging-adl",
+      "question": "What is Auto-Deleveraging (ADL)?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Auto-Deleveraging (ADL) is a risk management mechanism that may reduce opposing positions when the system cannot cover losses through liquidation alone."
+        },
+        {
+          "type": "text",
+          "value": "ADL is triggered during extreme market conditions."
+        }
+      ]
+    },
+    {
+      "id": "what-happens-during-extreme-market-volatility",
+      "question": "What happens during extreme market volatility?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "During high volatility:"
+        },
+        {
+          "type": "list",
+          "value": [
+            "Liquidations may occur rapidly"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "ADL or forced position reductions may be triggered"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Trading or order placement may be temporarily restricted"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "These measures help maintain platform stability."
+        }
+      ]
+    },
+    {
+      "id": "why-does-my-pnl-differ-from-expected-results",
+      "question": "Why does my PnL differ from expected results?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "PnL differences may occur due to:"
+        },
+        {
+          "type": "list",
+          "value": [
+            "Trading and funding fees"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Slippage"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Execution timing"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Margin changes"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "Actual results are based on executed trades, not estimated values."
+        }
+      ]
+    },
+    {
+      "id": "which-assets-support-futures-trading",
+      "question": "Which assets support futures trading?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Only selected trading pairs support futures contracts."
+        },
+        {
+          "type": "text",
+          "value": "Available contracts, leverage limits, and margin requirements are shown on the Futures Trading page."
+        }
+      ]
+    },
+    {
+      "id": "are-there-leverage-or-position-size-limits",
+      "question": "Are there leverage or position size limits?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Yes. Leverage and position size limits depend on:"
+        },
+        {
+          "type": "list",
+          "value": [
+            "Trading pair"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Market conditions"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Platform risk controls"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "Limits are displayed on the trading interface."
+        }
+      ]
+    },
+    {
+      "id": "how-do-i-monitor-my-futures-positions",
+      "question": "How do I monitor my futures positions?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "You can view:"
+        },
+        {
+          "type": "list",
+          "value": [
+            "Open positions"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Unrealized and realized PnL"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Margin ratio"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Liquidation price"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "All information is available in the Futures Dashboard."
+        }
+      ]
+    },
+    {
+      "id": "is-futures-trading-available-to-all-users",
+      "question": "Is futures trading available to all users?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Futures trading availability may depend on:"
+        },
+        {
+          "type": "list",
+          "value": [
+            "Account verification status"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Region"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Regulatory requirements"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "Certain users may be restricted from futures trading."
+        }
+      ]
+    },
+    {
+      "id": "is-futures-trading-suitable-for-beginners",
+      "question": "Is futures trading suitable for beginners?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Futures trading is high-risk and recommended for experienced traders."
+        },
+        {
+          "type": "text",
+          "value": "Beginners should start with low leverage and fully understand margin and liquidation mechanics."
+        }
+      ]
+    },
+    {
+      "id": "how-do-i-get-help-with-futures-trading-issues",
+      "question": "How do I get help with futures trading issues?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Please contact customer support and provide:"
+        },
+        {
+          "type": "list",
+          "value": [
+            "Account UID"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Trading pair or contract"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Order ID or screenshots"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "This helps resolve issues efficiently."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+{
+  "category": "Task Center",
+  "faqs": [
+    {
+      "id": "frequently-asked-questions-faq",
+      "question": "Frequently Asked Questions (FAQ)",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "What is the Task Center?In 1MAX, Task Center is the place where new and existing users can view, track, and complete available tasks and claim exclusive rewards with different uses."
+        },
+        {
+          "type": "text",
+          "value": "What type of rewards will I receive?"
+        }
+      ]
+    },
+    {
+      "id": "1-cash-reward",
+      "question": "1. Cash Reward",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "With Cash Reward, you can trade directly in the cryptocurrency markets, or you can convert it with another cryptocurrency."
+        }
+      ]
+    },
+    {
+      "id": "2-futures-bonus",
+      "question": "2. Futures Bonus",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Futures Bonus can be used as trading margin, to offset trading fees, and to cover trading losses in Perpetual contracts. Bonuses will be deducted before using the user's own funds."
+        }
+      ]
+    },
+    {
+      "id": "3-cashback-voucher",
+      "question": "3. Cashback Voucher",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Cashback Voucher can be used to rebate trading fees generated from Spot trading and Spot Grid trading. The rebate will be credited to your account by 00:00:00 (UTC+8) of the following day."
+        },
+        {
+          "type": "text",
+          "value": "Who can participate?1. Beginner Tasks"
+        },
+        {
+          "type": "text",
+          "value": "New users only, valid for 3 days after registration."
+        }
+      ]
+    },
+    {
+      "id": "2-daily-limited-time-tasks",
+      "question": "2. Daily & Limited-Time Tasks",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Available to all users."
+        },
+        {
+          "type": "text",
+          "value": "Do I need to complete Identity (KYC) verification?"
+        },
+        {
+          "type": "text",
+          "value": "Yes. Users will be required to complete KYC verification in order to utilize bonuses in spot or future accounts."
+        },
+        {
+          "type": "text",
+          "value": "Why isn’t my task updated or rewarded?"
+        },
+        {
+          "type": "list",
+          "value": [
+            "All task requirements must be met exactly within the valid period."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Actions outside the time frame don’t count."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Unmet tasks may be marked Failed and usually can’t be retried."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Progress does not carry over after reset or expiration."
+          ]
+        },
+        {
+          "type": "text",
+          "value": "If you’ve done all of the above and still aren’t able to claim your rewards after completing the task, please contact 1MAX Customer Support."
+        },
+        {
+          "type": "text",
+          "value": "Is there any time frame for claiming the rewards received on my account?Yes. You will need to claim the rewards before they expire."
+        },
+        {
+          "type": "text",
+          "value": "Will the reward be released immediately after I complete the task?"
+        },
+        {
+          "type": "text",
+          "value": "Yes. The rewards for beginner tasks and daily tasks are distributed immediately. For rewards from other 1MAX campaigns or events, please refer to the rewards distribution dates stated on the terms and conditions of the respective events."
+        },
+        {
+          "type": "text",
+          "value": "Will my claimed rewards expire?"
+        },
+        {
+          "type": "text",
+          "value": "Yes. There is an expiration date for the claimed rewards (excluding Cash Reward). Any unused rewards after expiration will be forfeited, and no reimbursement will be made. You can check the validity of your claimed rewards from the Reward Center page."
+        },
+        {
+          "type": "image",
+          "value": "images/Claimed_Rewards_Expiry.png"
+        }
+      ]
+    },
+    {
+      "id": "terms-conditions",
+      "question": "Terms & Conditions",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "All task requirements, trading volumes, deposit amounts, reward types, and claim conditions are based on the real-time information displayed in the Task Center. These settings may be adjusted at any time at 1MAX’s discretion."
+        }
+      ]
+    },
+    {
+      "id": "1-eligibility",
+      "question": "1. Eligibility",
+      "blocks": [
+        {
+          "type": "list",
+          "value": [
+            "Beginner Tasks are available only to new users within 3 days of registration."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Daily Tasks and Limited-Time Tasks are available to all eligible users."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "All tasks operate on a first-come, first-served basis. Tasks will end immediately once reward quotas are fully distributed."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2-task-completion-rules",
+      "question": "2. Task Completion Rules",
+      "blocks": [
+        {
+          "type": "list",
+          "value": [
+            "Users must complete task requirements exactly as shown in the Task Center to qualify for rewards."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Task requirements may include, but are not limited to, deposit actions, trading activities, or accumulated trading volume."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Only eligible actions completed within the task validity period will be counted."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "If a task requirement is not met as displayed, the task may be marked Failed and cannot be retried unless otherwise stated."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Progress, trading volume, or actions do not carry forward after task reset or task end."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3-task-validity-reset",
+      "question": "3. Task Validity & Reset",
+      "blocks": [
+        {
+          "type": "list",
+          "value": [
+            "Beginner Tasks are valid for 3 days from the user’s registration date."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Daily Tasks reset every day at 23:59 (UTC+8)."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Limited-Time Tasks are valid only during the event period shown in the Task Center."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4-reward-claim-rules",
+      "question": "4. Reward Claim Rules",
+      "blocks": [
+        {
+          "type": "list",
+          "value": [
+            "Rewards must be claimed within the claim period shown in the Task Center."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Daily and Limited-Time Task rewards must be claimed on the same day the task is completed, before 23:59 (UTC+8)."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Unclaimed or expired rewards will be forfeited and cannot be reissued or recovered."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Once a task status shows Ended, rewards are no longer claimable."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5-ip-fair-use-policy",
+      "question": "5. IP & Fair-Use Policy",
+      "blocks": [
+        {
+          "type": "list",
+          "value": [
+            "Only one account per IP group is eligible to receive the same reward."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Accounts sharing the same IP may be restricted from receiving rewards."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Any attempt to abuse, manipulate, or bypass task rules may result in disqualification or account review."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6-event-ending-conditions",
+      "question": "6. Event Ending Conditions",
+      "blocks": [
+        {
+          "type": "list",
+          "value": [
+            "Tasks may end earlier than the displayed deadline if reward quotas are exhausted."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "1MAX reserves the right to end any task without prior notice."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7-general-conditions",
+      "question": "7. General Conditions",
+      "blocks": [
+        {
+          "type": "list",
+          "value": [
+            "1MAX reserves the right to modify, suspend, or terminate any task or reward mechanism at its sole discretion."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "All decisions made by the platform are final and binding."
+          ]
+        }
+      ]
+    }
+  ]
+}

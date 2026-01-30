@@ -1,0 +1,364 @@
+{
+  "category": "Spot Trading",
+  "faqs": [
+    {
+      "id": "spot-trading-frequently-asked-questions-faq",
+      "question": "Spot Trading – Frequently Asked Questions (FAQ)",
+      "blocks": []
+    },
+    {
+      "id": "what-is-spot-trading",
+      "question": "What is spot trading?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Spot trading allows users to buy and sell cryptocurrencies at the current market price. When a trade is executed, the assets are immediately exchanged and credited to your account."
+        }
+      ]
+    },
+    {
+      "id": "how-do-i-place-a-spot-trade",
+      "question": "How do I place a spot trade?",
+      "blocks": [
+        {
+          "type": "list",
+          "value": [
+            "Select the trading pair you want to trade (e.g., BTC/USDT)."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Choose an order type: market or limit."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Enter the amount to buy or sell."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Confirm the order to execute the trade at the selected price."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "what-order-types-are-supported",
+      "question": "What order types are supported?",
+      "blocks": [
+        {
+          "type": "list",
+          "value": [
+            "Market Order: Executes immediately at the best available price."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Limit Order: Executes at your specified price or better."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "what-is-the-difference-between-market-orders-and-l",
+      "question": "What is the difference between Market Orders and Limit Orders?",
+      "blocks": [
+        {
+          "type": "list",
+          "value": [
+            "Market Orders prioritize speed and execute immediately, but the final execution price may vary due to market liquidity."
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Limit Orders allow you to control the execution price, but the order may remain unfilled if the market does not reach your specified price."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "can-i-cancel-a-spot-order",
+      "question": "Can I cancel a spot order?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Yes, you can cancel an order at any time before it is fully executed."
+        },
+        {
+          "type": "text",
+          "value": "If an order is partially filled, only the remaining unfilled portion can be canceled."
+        }
+      ]
+    },
+    {
+      "id": "what-happens-if-my-order-is-partially-filled",
+      "question": "What happens if my order is partially filled?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "If an order is partially filled:"
+        },
+        {
+          "type": "list",
+          "value": [
+            "The filled portion is completed and cannot be reversed"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "The remaining portion stays open until it is filled or canceled manually"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "what-fees-apply-to-spot-trading",
+      "question": "What fees apply to spot trading?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Spot trades are subject to standard trading fees, which may vary by trading pair and order type (maker or taker)."
+        },
+        {
+          "type": "text",
+          "value": "Fee details are typically displayed before confirming the trade."
+        }
+      ]
+    },
+    {
+      "id": "when-will-my-assets-be-credited-after-a-trade",
+      "question": "When will my assets be credited after a trade?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Assets are updated instantly in your trading account once the spot trade is executed."
+        }
+      ]
+    },
+    {
+      "id": "why-wasnt-my-order-executed",
+      "question": "Why wasn’t my order executed?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Orders may fail or remain unfilled due to:"
+        },
+        {
+          "type": "list",
+          "value": [
+            "Limit price not being reached"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Insufficient account balance"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Low market liquidity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "why-was-my-market-order-executed-at-a-different-pr",
+      "question": "Why was my market order executed at a different price than expected?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Market orders are executed at the best available prices in the order book."
+        },
+        {
+          "type": "text",
+          "value": "During periods of high volatility or low liquidity, the final execution price may differ slightly from the last traded price due to slippage."
+        }
+      ]
+    },
+    {
+      "id": "do-i-need-to-deposit-funds-before-placing-a-spot-t",
+      "question": "Do I need to deposit funds before placing a spot trade?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Yes. You must have sufficient available balance in your account before placing a spot trade."
+        },
+        {
+          "type": "text",
+          "value": "Orders will be rejected if your balance is insufficient."
+        }
+      ]
+    },
+    {
+      "id": "what-is-the-minimum-trade-amount",
+      "question": "What is the minimum trade amount?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Minimum trade amounts vary depending on the trading pair and are usually displayed when placing an order."
+        }
+      ]
+    },
+    {
+      "id": "what-is-an-order-book",
+      "question": "What is an order book?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "The order book shows all open buy and sell orders for a trading pair, organized by price level."
+        },
+        {
+          "type": "text",
+          "value": "It helps traders understand market liquidity and current supply and demand."
+        }
+      ]
+    },
+    {
+      "id": "is-spot-trading-risky",
+      "question": "Is spot trading risky?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Spot trading carries market risk due to price volatility."
+        },
+        {
+          "type": "text",
+          "value": "Unlike margin or futures trading, spot trading does not use leverage, so there is no risk of liquidation."
+        }
+      ]
+    },
+    {
+      "id": "can-i-lose-more-than-my-investment",
+      "question": "Can I lose more than my investment?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "No. In spot trading, you can only lose the amount you invest."
+        }
+      ]
+    },
+    {
+      "id": "are-spot-markets-always-open",
+      "question": "Are spot markets always open?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Spot markets are generally available 24/7."
+        },
+        {
+          "type": "text",
+          "value": "However, some trading pairs may be temporarily paused, delisted, or unavailable due to maintenance, low liquidity, or risk adjustments."
+        }
+      ]
+    },
+    {
+      "id": "where-can-i-view-my-trade-history",
+      "question": "Where can I view my trade history?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Executed orders and trade history can be found in your Order History or Account Statements section."
+        }
+      ]
+    },
+    {
+      "id": "do-i-need-verification-to-start-spot-trading",
+      "question": "Do I need verification to start spot trading?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Some platforms require account verification to unlock full trading features and higher withdrawal limits."
+        },
+        {
+          "type": "text",
+          "value": "Available features may vary depending on your verification status and region."
+        }
+      ]
+    },
+    {
+      "id": "can-i-trade-spot-using-the-mobile-app",
+      "question": "Can I trade spot using the mobile app?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Yes. Spot trading is supported on both the web platform and mobile applications, allowing you to trade anytime and anywhere."
+        }
+      ]
+    },
+    {
+      "id": "how-do-i-monitor-my-trading-performance",
+      "question": "How do I monitor my trading performance?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Most platforms provide dashboards where you can review:"
+        },
+        {
+          "type": "list",
+          "value": [
+            "Open orders"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Completed trades"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Account balances"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Trading history"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how-can-i-get-help-with-spot-trading-issues",
+      "question": "How can I get help with spot trading issues?",
+      "blocks": [
+        {
+          "type": "text",
+          "value": "Contact customer support and provide relevant information such as:"
+        },
+        {
+          "type": "list",
+          "value": [
+            "Your account UID"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Trading pair"
+          ]
+        },
+        {
+          "type": "list",
+          "value": [
+            "Order number or screenshots"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "This helps resolve issues more efficiently."
+        }
+      ]
+    }
+  ]
+}
