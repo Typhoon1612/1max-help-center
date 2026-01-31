@@ -297,6 +297,98 @@ run();
 ```
 
 </details>
+
+---
+
+## 📊 JSON Data Structure: FAQ List Types
+
+### Overview
+
+All FAQ JSON files use a `listType` property to distinguish between ordered (numbered) and unordered (bulleted) lists.
+
+### List Type Classification
+
+**Ordered Lists (`"listType": "ordered"`)** - Use for:
+
+- Sequential steps in procedures
+- Instructions that must be followed in order
+- "How to" tutorials
+- Setup/configuration steps
+- Items starting with action verbs (Log in, Select, Enter, Confirm)
+
+**Unordered Lists (`"listType": "unordered"`)** - Use for:
+
+- Features and benefits
+- Options and choices
+- Reasons and causes
+- Requirements and conditions
+- General information items
+- Comparison points
+- Safety measures/recommendations
+
+### Format Structure
+
+```json
+{
+  "type": "list",
+  "listType": "ordered", // or "unordered"
+  "value": ["item 1", "item 2", "item 3"]
+}
+```
+
+### Statistics (15 JSON Files)
+
+- **Total Lists:** 260
+- **Ordered Lists:** 46 (16.2%) - Sequential procedures
+- **Unordered Lists:** 238 (83.8%) - Features/options
+- **Completion:** 100%
+
+### Examples
+
+**Ordered List Example** (deposit_withdrawal.json):
+
+```json
+{
+  "type": "list",
+  "listType": "ordered",
+  "value": ["Log in to your 1MAX account."]
+},
+{
+  "type": "list",
+  "listType": "ordered",
+  "value": ["Go to 'Balances' → 'Deposit.'"]
+}
+```
+
+**Unordered List Example** (account_security.json):
+
+```json
+{
+  "type": "list",
+  "listType": "unordered",
+  "value": ["Two-Factor Authentication (2FA)"]
+},
+{
+  "type": "list",
+  "listType": "unordered",
+  "value": ["Anti-phishing codes"]
+}
+```
+
+### Image Naming Convention
+
+All FAQ images follow a standardized naming pattern:
+
+- Format: `images/{section_name}_{number}.png`
+- Examples:
+  - `images/f2c_1.png`, `images/f2c_2.png` (FIAT2CRYPTO section)
+  - `images/future_copy_trading_1.png` (Futures Copy Trading section)
+  - `images/grid_trading_1.png` (Grid Trading section)
+  - `images/spot_copy_trading_1.png` (Spot Copy Trading section)
+  - `images/task_center_1.png` (Task Center section)
+
+---
+
 - **Standard Conventions:** Automatically apply the standard community idioms for that language (e.g., PEP8 for Python, PSR for PHP, Airbnb Style for JS).
 - **Consistency:** Mimic the existing coding style of the project if one exists.
 
