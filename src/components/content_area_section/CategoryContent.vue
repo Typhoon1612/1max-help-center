@@ -1,5 +1,5 @@
 <template>
-  <div class="account-security-container">
+  <div class="category-content-container">
     <div
       v-if="loading"
       class="loading-state">
@@ -103,13 +103,94 @@
 </template>
 
 <script setup>
-  import { ref, onMounted, computed } from "vue";
+  import { ref, computed, watch } from "vue";
 
-  const faqs = ref([]);
-  const loading = ref(true);
-  const error = ref(null);
+  const props = defineProps({
+    category: {
+      type: Object,
+      default: null,
+    },
+    dataUrl: {
+      type: String,
+      default: null,
+    },
+  });
+
   const openAccordions = ref([]);
-  const cloudFrontUrl = import.meta.env.VITE_CLOUDFRONT_URL;
+
+  // Determine URL from props
+  const resolveUrl = () => {
+    if (props.dataUrl) return props.dataUrl;
+    if (props.category?.source_file)
+      return `json-files/${props.category.source_file}`;
+    if (props.category?.jsonFile) return props.category.jsonFile;
+    if (props.category?.contentUrl) return props.category.contentUrl;
+    if (props.category?.id) {
+      // Fallback: convert category id to filename (e.g., 'task-center' -> 'task_center.json')
+      const filename = props.category.id.replace(/-/g, "_") + ".json";
+      return `json-files/${filename}`;
+    }
+    return null;
+  };
+
+  const url = computed(() => resolveUrl());
+
+  const data = ref(null);
+  const loading = ref(false);
+  const error = ref(null);
+
+  // Fetch data function
+  const fetchData = async (fetchUrl) => {
+    if (!fetchUrl) {
+      data.value = null;
+      loading.value = false;
+      error.value = null;
+      return;
+    }
+
+    loading.value = true;
+    error.value = null;
+    data.value = null;
+
+    try {
+      const base = import.meta.env.VITE_CLOUDFRONT_URL;
+      if (!base) {
+        throw new Error("VITE_CLOUDFRONT_URL environment variable is not set");
+      }
+
+      const fullUrl = fetchUrl.startsWith("http")
+        ? fetchUrl
+        : `${base}/${fetchUrl.replace(/^\/+/, "")}`;
+
+      const response = await fetch(fullUrl);
+
+      if (!response.ok) {
+        throw new Error(
+          `Failed to fetch: ${response.status} ${response.statusText}`,
+        );
+      }
+
+      const json = await response.json();
+      data.value = json;
+    } catch (err) {
+      console.error("[CategoryContent] Error:", err);
+      error.value = err.message || "Unknown error occurred";
+    } finally {
+      loading.value = false;
+    }
+  };
+
+  // Watch URL changes and refetch
+  watch(
+    url,
+    (newUrl) => {
+      openAccordions.value = []; // Reset open accordions when category changes
+      fetchData(newUrl);
+    },
+    { immediate: true },
+  );
+
+  const faqs = computed(() => data.value?.faqs || []);
 
   const toggleAccordion = (faqId) => {
     const index = openAccordions.value.indexOf(faqId);
@@ -120,10 +201,7 @@
     }
   };
 
-  // Normalize and sanitize list input so both arrays and strings work.
-  // Accepts either an array of items, or a single string (newline- or
-  // numbered-items separated). Returns an array of cleaned strings without
-  // leading numeric prefixes so browser ordered lists render correctly.
+  // Sanitize list items (remove numeric prefixes)
   const sanitizeList = (items) => {
     let arr = [];
 
@@ -155,9 +233,7 @@
     });
   };
 
-  // Combine consecutive list blocks with the same `listType` into a single
-  // list block so ordered lists render with continuous numbering instead of
-  // restarting at 1 for each block.
+  // Combine consecutive list blocks of the same type
   const combineBlocks = (blocks) => {
     if (!Array.isArray(blocks)) return [];
     const result = [];
@@ -170,7 +246,6 @@
         last.type === "list" &&
         last.listType === block.listType
       ) {
-        // merge values (arrays or strings)
         const values = Array.isArray(block.value)
           ? block.value
           : typeof block.value === "string"
@@ -178,7 +253,6 @@
             : [];
         last.value = last.value.concat(values);
       } else {
-        // normalize value to array
         const cloned = { ...block };
         if (cloned && cloned.type === "list") {
           cloned.value = Array.isArray(cloned.value)
@@ -193,36 +267,7 @@
     return result;
   };
 
-  const loadAccountSecurityData = async () => {
-    try {
-      const url = `${cloudFrontUrl}/json-files/account_security.json`;
-      const response = await fetch(url);
-
-      if (!response.ok) {
-        throw new Error(`Failed to fetch: ${response.status}`);
-      }
-
-      const data = await response.json();
-      console.debug("[AccountSecurity] fetched data:", data);
-      faqs.value = data.faqs || [];
-      // debug processed structure
-      setTimeout(() => {
-        console.debug("[AccountSecurity] processed faqs:", processedFaqs.value);
-      }, 0);
-    } catch (err) {
-      console.error("Failed to load account security data:", err);
-      error.value = err.message;
-    } finally {
-      loading.value = false;
-    }
-  };
-
-  onMounted(() => {
-    loadAccountSecurityData();
-  });
-
-  // Prepare faqs with combined blocks and compute starting numbers for
-  // ordered lists so numbering continues across separated <ol> elements.
+  // Process FAQs: combine blocks and compute ordered list start numbers
   const processedFaqs = computed(() => {
     return faqs.value.map((faq) => {
       const blocks = combineBlocks(faq.blocks || []);
@@ -231,7 +276,6 @@
 
       for (const b of blocks) {
         if (b && b.type === "list" && b.listType === "ordered") {
-          // count sanitized items to know how many numbers this block will occupy
           const items = sanitizeList(b.value);
           listStarts.push(counter + 1);
           counter += items.length;
@@ -250,7 +294,7 @@
 </script>
 
 <style scoped>
-  .account-security-container {
+  .category-content-container {
     font-family: "HarmonyOS_Sans", sans-serif;
   }
 

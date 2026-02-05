@@ -48,6 +48,12 @@
     font-family: "HarmonyOS_Sans", sans-serif;
   }
 
+  @media (max-width: 767px) {
+    .breadcrumb-nav {
+      padding: 2rem 0 1rem 0;
+    }
+  }
+
   .breadcrumb-container {
     display: flex;
     align-items: center;

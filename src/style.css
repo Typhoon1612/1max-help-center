@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+/* Responsive sidebar utilities */
+@media (max-width: 767px) {
+  body.sidebar-open {
+    overflow: hidden;
+  }
+}

@@ -2,11 +2,25 @@
   <main class="content-area">
     <BreadcrumpNav :selected-category="selectedCategory" />
 
-    <!-- Show Account Security page when category is selected -->
+    <!-- Show Account Security page (legacy) -->
     <div
       v-if="selectedCategory?.id === 'acc_sec'"
       class="content-container">
       <AccountSecurity />
+    </div>
+
+    <!-- Show Task Center page -->
+    <div
+      v-else-if="selectedCategory?.id === 'task_center'"
+      class="content-container">
+      <TaskCenter :category="selectedCategory" />
+    </div>
+
+    <!-- Show generic category content for other categories -->
+    <div
+      v-else-if="selectedCategory"
+      class="content-container">
+      <CategoryContent :category="selectedCategory" />
     </div>
 
     <!-- Default: Show sample accordions when no category is selected -->
@@ -47,6 +61,8 @@
   import BreadcrumpNav from "./sub-components/BreadcrumpNav.vue";
   import Accordion from "./sub-components/Accordion.vue";
   import AccountSecurity from "./account_security.vue";
+  import TaskCenter from "./TaskCenter.vue";
+  import CategoryContent from "./CategoryContent.vue";
 
   defineProps({
     selectedCategory: {
@@ -57,10 +73,6 @@
 </script>
 
 <style scoped>
-  .content-area {
-    /* Content area specific styles can go here */
-  }
-
   .content-container,
   .accordion-container {
     margin-top: 1.5rem;

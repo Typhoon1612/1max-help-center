@@ -7,20 +7,6 @@
       @click="selectCategory(category.id)">
       <div class="category-header">
         <span class="category-title">{{ category.title }}</span>
-        <svg
-          class="chevron-icon"
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M6 9L12 15L18 9"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round" />
-        </svg>
       </div>
     </div>
   </div>
@@ -99,10 +85,6 @@
     font-weight: 700;
   }
 
-  .category-item.selected .chevron-icon {
-    color: #6842ff;
-  }
-
   .category-header {
     display: flex;
     align-items: center;
@@ -119,17 +101,7 @@
     transition: color 0.3s ease;
   }
 
-  .chevron-icon {
-    color: #6b7280;
-    transition: all 0.3s ease;
-    flex-shrink: 0;
-  }
-
   .category-item:hover .category-title {
-    color: #ffffff;
-  }
-
-  .category-item:hover .chevron-icon {
     color: #ffffff;
   }
 </style>
