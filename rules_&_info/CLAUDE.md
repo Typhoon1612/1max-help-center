@@ -56,6 +56,15 @@ _Strict adherence to these rules ensures maintainability across ALL languages._
 - **Sanitization:** Validate ALL external inputs (User/API/DB).
 - **Secrets:** NEVER hardcode API keys or tokens. Use Environment Variables.
 
+## 📡 Data Source Policy — AWS-only
+
+- **Source of truth:** All FAQ content (sidebar config, category lists, questions, answers, and images) MUST be fetched at runtime from the AWS CloudFront JSON endpoint configured via the `VITE_CLOUDFRONT_URL` environment variable. Do NOT embed question titles, answers, or FAQ JSON objects inside source files, components, or templates.
+- **Implementation requirement:** Components must construct fetch URLs using `import.meta.env.VITE_CLOUDFRONT_URL` (or equivalent runtime config) and render data dynamically. Placeholder UI (e.g., `Loading...`) is allowed, but no hardcoded QA arrays or strings containing question/answer content.
+- **No local shipping of QA content:** Shipping real FAQ content inside the repository (hardcoded arrays, JSON files committed to `src/` and referenced directly by components) is forbidden. If a developer needs a local fallback for offline work, it must be explicitly documented, gated behind a development-only flag, and removed before production builds.
+- **Failure behavior:** On network or fetch failure, components must show a clear loading/error state and MUST NOT fallback to embedded QA content. Log errors for debugging; do not leak secrets or production URLs in client-side logs.
+- **CORS & caching:** Ensure CloudFront is configured with appropriate CORS headers for development and production origins. Implement sensible client-side caching (e.g., `Cache-Control`, local caching) and invalidation strategies.
+- **Review enforcement:** Pull requests will be reviewed for this rule; any PR introducing hardcoded FAQ content will be rejected until content is moved to the CloudFront JSON and fetched at runtime.
+
 ## 🎨 6. Auto-Adaptive Styling
 
 - **Context Awareness:** Detect the programming language and framework of the current file.
@@ -292,6 +301,8 @@ function run() {
     if (match) processFile(path.join(SOURCE_DIR, match), mapping);
   });
 }
+
+## 8.
 
 run();
 ```
