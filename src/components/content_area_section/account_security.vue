@@ -16,7 +16,7 @@
       v-else
       class="accordion-list">
       <div
-        v-for="(faq, index) in faqs"
+        v-for="(faq, index) in processedFaqs"
         :key="faq.id"
         class="accordion-wrapper">
         <div class="accordion-item">
@@ -59,10 +59,9 @@
 
                   <!-- Ordered list -->
                   <ol
-                    v-else-if="
-                      block.type === 'list' && block.listType === 'ordered'
-                    "
-                    class="list-block ordered">
+                    v-else-if="block.type === 'list' && block.listType === 'ordered'"
+                    class="list-block ordered"
+                    :start="(faq.listStarts && faq.listStarts[blockIndex] > 1) ? faq.listStarts[blockIndex] : undefined">
                     <li
                       v-for="(item, itemIndex) in sanitizeList(block.value)"
                       :key="itemIndex">
@@ -98,7 +97,7 @@
 </template>
 
 <script setup>
-  import { ref, onMounted } from "vue";
+  import { ref, onMounted, computed } from "vue";
 
   const faqs = ref([]);
   const loading = ref(true);
@@ -150,6 +149,44 @@
     });
   };
 
+  // Combine consecutive list blocks with the same `listType` into a single
+  // list block so ordered lists render with continuous numbering instead of
+  // restarting at 1 for each block.
+  const combineBlocks = (blocks) => {
+    if (!Array.isArray(blocks)) return [];
+    const result = [];
+    for (const block of blocks) {
+      const last = result[result.length - 1];
+      if (
+        block &&
+        block.type === "list" &&
+        last &&
+        last.type === "list" &&
+        last.listType === block.listType
+      ) {
+        // merge values (arrays or strings)
+        const values = Array.isArray(block.value)
+          ? block.value
+          : typeof block.value === "string"
+            ? [block.value]
+            : [];
+        last.value = last.value.concat(values);
+      } else {
+        // normalize value to array
+        const cloned = { ...block };
+        if (cloned && cloned.type === "list") {
+          cloned.value = Array.isArray(cloned.value)
+            ? cloned.value.slice()
+            : typeof cloned.value === "string"
+              ? [cloned.value]
+              : [];
+        }
+        result.push(cloned);
+      }
+    }
+    return result;
+  };
+
   const loadAccountSecurityData = async () => {
     try {
       const url = `${cloudFrontUrl}/json-files/account_security.json`;
@@ -160,7 +197,12 @@
       }
 
       const data = await response.json();
+      console.debug("[AccountSecurity] fetched data:", data);
       faqs.value = data.faqs || [];
+      // debug processed structure
+      setTimeout(() => {
+        console.debug("[AccountSecurity] processed faqs:", processedFaqs.value);
+      }, 0);
     } catch (err) {
       console.error("Failed to load account security data:", err);
       error.value = err.message;
@@ -171,6 +213,33 @@
 
   onMounted(() => {
     loadAccountSecurityData();
+  });
+
+  // Prepare faqs with combined blocks and compute starting numbers for
+  // ordered lists so numbering continues across separated <ol> elements.
+  const processedFaqs = computed(() => {
+    return faqs.value.map((faq) => {
+      const blocks = combineBlocks(faq.blocks || []);
+      const listStarts = [];
+      let counter = 0;
+
+      for (const b of blocks) {
+        if (b && b.type === "list" && b.listType === "ordered") {
+          // count sanitized items to know how many numbers this block will occupy
+          const items = sanitizeList(b.value);
+          listStarts.push(counter + 1);
+          counter += items.length;
+        } else {
+          listStarts.push(null);
+        }
+      }
+
+      return {
+        ...faq,
+        blocks,
+        listStarts,
+      };
+    });
   });
 </script>
 
