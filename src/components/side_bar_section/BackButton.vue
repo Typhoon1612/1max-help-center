@@ -18,7 +18,7 @@
         stroke-linecap="round"
         stroke-linejoin="round" />
     </svg>
-    <span class="button-text">Back to 1MAX.com</span>
+    <span class="button-text">Return to Homepage</span>
   </a>
 </template>
 

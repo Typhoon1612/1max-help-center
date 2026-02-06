@@ -89,7 +89,7 @@
                   <!-- Image block -->
                   <img
                     v-else-if="block.type === 'image'"
-                    :src="block.value"
+                    :src="`${block.value}`"
                     :alt="block.alt || 'FAQ Image'"
                     class="image-block" />
                 </div>
@@ -154,6 +154,7 @@
 
     try {
       const base = import.meta.env.VITE_CLOUDFRONT_URL;
+      console.log("Base URL:", base);
       if (!base) {
         throw new Error("VITE_CLOUDFRONT_URL environment variable is not set");
       }
