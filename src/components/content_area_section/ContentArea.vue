@@ -2,11 +2,11 @@
   <main class="content-area">
     <BreadcrumpNav :selected-category="selectedCategory" />
 
-    <!-- Show Account Security page (legacy) -->
+    <!-- Show Account Security using the generic CategoryContent -->
     <div
       v-if="selectedCategory?.id === 'acc_sec'"
       class="content-container">
-      <AccountSecurity />
+      <CategoryContent :category="selectedCategory" />
     </div>
 
     <!-- Show Task Center page -->
@@ -60,7 +60,6 @@
   import { defineProps } from "vue";
   import BreadcrumpNav from "./sub-components/BreadcrumpNav.vue";
   import Accordion from "./sub-components/Accordion.vue";
-  import AccountSecurity from "./account_security.vue";
   import TaskCenter from "./TaskCenter.vue";
   import CategoryContent from "./CategoryContent.vue";
 
