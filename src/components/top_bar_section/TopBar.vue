@@ -27,7 +27,9 @@
 
       <!-- Right: Logo Image -->
       <div class="flex items-center">
-        <a href="https://1max.com" aria-label="Go to 1MAX.com">
+        <a
+          href="https://1max.com"
+          aria-label="Go to 1MAX.com">
           <img
             src="../../assets/images/1max_faq_logo.png"
             alt="1MAX Logo"

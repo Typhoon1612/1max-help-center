@@ -1,6 +1,7 @@
 # Sidebar Configuration Structure
 
 ## Overview
+
 The sidebar now supports a hybrid structure that allows both flat items and nested groups with accordion behavior.
 
 ## JSON Structure
@@ -67,7 +68,9 @@ The `sidebar_config.json` file (hosted on CloudFront) should follow this structu
 ## Item Types
 
 ### Flat Item (No Children)
+
 A standard category that links directly to content:
+
 ```json
 {
   "id": "unique_id",
@@ -77,7 +80,9 @@ A standard category that links directly to content:
 ```
 
 ### Group Item (Has Children)
+
 A parent category that contains nested items:
+
 ```json
 {
   "id": "group_id",
@@ -109,6 +114,7 @@ Based on requirements, the following groups MUST be created:
 ## Flat Items (Remain at Root Level)
 
 All other categories should remain as flat items at the root level:
+
 - Account & Security
 - Task Center
 - Deposit & Withdrawal
@@ -122,11 +128,13 @@ All other categories should remain as flat items at the root level:
 ## UI Behavior
 
 ### Flat Items
+
 - Click → Navigate directly to category content
 - Hover → Purple background with shadow
 - Selected → Light gray background with purple left border
 
 ### Group Items
+
 - Click → Toggle accordion (show/hide children)
 - Chevron icon rotates 180° when expanded
 - Children appear underneath with left indent
@@ -139,6 +147,7 @@ All other categories should remain as flat items at the root level:
 ## Validation
 
 The component will gracefully handle:
+
 - Items with empty/missing `children` array → Renders as flat item
 - Items with `children` array → Renders as accordion group
 - Missing `source_file` → Will be handled by CategoryContent component

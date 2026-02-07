@@ -35,9 +35,27 @@
 
       const data = await response.json();
       categories.value = data;
+
+      // Auto-select Account & Security on initial load
+      const defaultCategory = findCategoryById(data, "acc_sec");
+      if (defaultCategory) {
+        selectCategory(defaultCategory);
+      }
     } catch (error) {
       console.error("Failed to load sidebar configuration:", error);
     }
+  };
+
+  // Helper function to find category by id (handles nested children)
+  const findCategoryById = (items, id) => {
+    for (const item of items) {
+      if (item.id === id) return item;
+      if (item.children) {
+        const found = findCategoryById(item.children, id);
+        if (found) return found;
+      }
+    }
+    return null;
   };
 
   onMounted(() => {

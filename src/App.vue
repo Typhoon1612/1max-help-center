@@ -4,7 +4,8 @@
   import SideBar from "./components/side_bar_section/SideBar.vue";
   import ContentArea from "./components/content_area_section/ContentArea.vue";
 
-  const selectedCategory = ref(null);
+  // Default to Account & Security category
+  const selectedCategory = ref({ id: "account_security", title: "Account & Security" });
   const isSidebarOpen = ref(false);
 
   const handleCategorySelected = (category) => {
