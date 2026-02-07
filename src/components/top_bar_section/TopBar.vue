@@ -27,10 +27,12 @@
 
       <!-- Right: Logo Image -->
       <div class="flex items-center">
-        <img
-          src="../../assets/images/1max_faq_logo.png"
-          alt="1MAX Logo"
-          class="h-15" />
+        <a href="https://1max.com" aria-label="Go to 1MAX.com">
+          <img
+            src="../../assets/images/1max_faq_logo.png"
+            alt="1MAX Logo"
+            class="logo-img" />
+        </a>
       </div>
     </div>
   </div>
@@ -81,6 +83,18 @@
       padding-left: 1rem;
       padding-right: 1rem;
       position: relative;
+    }
+  }
+
+  /* Logo sizing */
+  .logo-img {
+    height: 48px;
+    display: block;
+  }
+
+  @media (max-width: 500px) {
+    .logo-img {
+      height: 36px;
     }
   }
 </style>
