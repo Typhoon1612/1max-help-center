@@ -228,8 +228,9 @@
 
     return arr.map((it) => {
       if (it == null) return "";
+      // Change the RegEx to require a separator like '.' or ')'
       return String(it)
-        .replace(/^\s*\d+[.\)\-:]?\s*/, "")
+        .replace(/^\s*\d+[.\)\-:]\s+/, "")
         .trim();
     });
   };
