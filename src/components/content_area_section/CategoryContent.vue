@@ -50,14 +50,12 @@
                   v-for="(block, blockIndex) in faq.blocks"
                   :key="blockIndex"
                   class="content-block">
-                  <!-- Text block -->
                   <p
                     v-if="block.type === 'text'"
-                    class="text-block">
-                    {{ block.value }}
+                    class="text-block"
+                    v-html="block.value">
                   </p>
 
-                  <!-- Ordered list -->
                   <ol
                     v-else-if="
                       block.type === 'list' && block.listType === 'ordered'
@@ -70,19 +68,18 @@
                     ">
                     <li
                       v-for="(item, itemIndex) in sanitizeList(block.value)"
-                      :key="itemIndex">
-                      {{ item }}
+                      :key="itemIndex"
+                      v-html="item">
                     </li>
                   </ol>
 
-                  <!-- Unordered list -->
                   <ul
                     v-else-if="block.type === 'list'"
                     class="list-block unordered">
                     <li
                       v-for="(item, itemIndex) in sanitizeList(block.value)"
-                      :key="itemIndex">
-                      {{ item }}
+                      :key="itemIndex"
+                      v-html="item">
                     </li>
                   </ul>
 
