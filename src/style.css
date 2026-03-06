@@ -6,3 +6,14 @@
     overflow: hidden;
   }
 }
+
+/* Style all hyperlinks inside the FAQ content */
+.content-blocks a {
+  color: #007bff; /* A nice standard hyperlink blue */
+  text-decoration: underline;
+}
+
+/* Optional: Make it change color slightly when someone hovers over it */
+.content-blocks a:hover {
+  color: #0056b3; 
+}
